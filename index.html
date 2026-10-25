@@ -3,162 +3,84 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Panther FX Trading: Forex education, market analysis and risk management.">
 <title>Panther The 1st FX Trading</title>
-<meta name="description" content="Forex education, market analysis and risk management by Panther FX Trading.">
-
 <style>
-:root {
-  --bg: #080808;
-  --card: #151515;
-  --gold: #d4af37;
-  --white: #ffffff;
-  --muted: #bdbdbd;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  background: var(--bg);
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-}
-header {
-  padding: 18px 7%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  border-bottom: 1px solid #3b3018;
-  background: #090909;
-}
-.logo { color: var(--gold); font-size: 20px; font-weight: 900; }
-nav { display: flex; gap: 17px; flex-wrap: wrap; }
-nav a { color: white; text-decoration: none; font-size: 14px; }
-nav a:hover { color: var(--gold); }
-
-.hero {
-  min-height: 78vh;
-  padding: 75px 7%;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: 35px;
-  background: radial-gradient(ellipse at top right, #30250e, #080808 65%);
-}
-.eyebrow { color: var(--gold); letter-spacing: 3px; font-size: 12px; font-weight: bold; }
-h1 { font-size: clamp(38px, 6vw, 66px); line-height: 1.12; margin: 18px 0; }
-h1 span, h2 span { color: var(--gold); }
-p { color: var(--muted); }
-.hero p { max-width: 580px; }
-.actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 28px; }
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-}
-.gold { background: var(--gold); color: #080808; }
-.outline { border: 1px solid var(--gold); color: var(--gold); }
-
-.chart {
-  min-height: 280px;
-  padding: 25px;
-  border: 1px solid #59451a;
-  border-radius: 12px;
-  background: #101010;
-  box-shadow: 0 15px 50px #000;
-}
-.chart h3 { color: var(--gold); margin-bottom: 15px; }
-.candles {
-  height: 165px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid #4a3b1c;
-  background: repeating-linear-gradient(to bottom, transparent 0 39px, #292319 40px);
-}
-.candle { width: 12px; position: relative; background: var(--gold); border-radius: 2px; }
-.candle::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 35px;
-  background: var(--gold);
-  left: 5px;
-  top: -17px;
-}
-.c1 { height: 45px; }
-.c2 { height: 70px; }
-.c3 { height: 35px; }
-.c4 { height: 85px; }
-.c5 { height: 60px; }
-.c6 { height: 100px; }
-.c7 { height: 75px; }
-.c8 { height: 115px; }
-.chart-note { margin-top: 15px; font-size: 12px; }
-
-section { padding: 65px 7%; }
-h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 15px; }
-.intro { max-width: 720px; margin-bottom: 28px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.card {
-  background: var(--card);
-  padding: 24px;
-  border: 1px solid #3a301b;
-  border-radius: 8px;
-}
-.icon { color: var(--gold); font-size: 30px; }
-.card h3 { color: var(--gold); margin: 8px 0; }
-.card p { font-size: 14px; }
-
-.about { background: #101010; }
-.contact { background: #101010; }
-.contact a { color: var(--gold); overflow-wrap: anywhere; }
-.notice { margin-top: 25px; font-size: 12px; }
-footer {
-  text-align: center;
-  padding: 25px 7%;
-  border-top: 1px solid #3b3018;
-  color: var(--muted);
-  font-size: 13px;
-}
-.whatsapp {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 5;
-  background: var(--gold);
-  color: #080808;
-  padding: 12px 17px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 18px #000;
-}
-@media(max-width: 760px) {
-  .hero { grid-template-columns: 1fr; padding-top: 55px; }
-  header { align-items: flex-start; }
-  nav { gap: 12px; }
-}
+:root{--bg:#080b09;--card:#141a16;--gold:#d8b45a;--green:#48e69a;--white:#fff;--muted:#b9c4bd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.7}
+header{padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:#090d0a;border-bottom:1px solid #354536}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold);font-weight:900}
+.logo{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+nav{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+nav a{color:white;text-decoration:none;font-size:13px}
+select,button,input{font:inherit}
+select{background:#17221a;color:white;border:1px solid var(--gold);padding:8px;border-radius:6px;max-width:100%}
+.hero{padding:65px 6%;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;background:radial-gradient(ellipse at top right,#233a27,#080b09 65%)}
+.eyebrow{color:var(--green);font-size:12px;letter-spacing:2px;font-weight:bold}
+h1{font-size:clamp(36px,6vw,64px);line-height:1.1;margin:18px 0}
+h1 span,h2 span{color:var(--gold)}
+p{color:var(--muted);margin:8px 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:11px 17px;border-radius:6px;text-decoration:none;font-weight:bold}
+.gold{background:var(--gold);color:#090b09}
+.outline{border:1px solid var(--green);color:var(--green)}
+.panel,.card{background:var(--card);border:1px solid #344b38;border-radius:12px;padding:22px}
+.panel h3,.card h3{color:var(--gold);margin-bottom:8px}
+.chart{height:150px;display:flex;align-items:center;justify-content:space-around;border-bottom:1px solid #526253;background:repeating-linear-gradient(to bottom,transparent 0 36px,#27332a 37px)}
+.candle{width:13px;position:relative;border-radius:2px;background:var(--green)}
+.candle:before{content:"";position:absolute;width:2px;height:35px;background:inherit;left:5px;top:-12px}
+.candle:nth-child(1){height:38px}.candle:nth-child(2){height:65px;background:var(--gold)}.candle:nth-child(3){height:48px}.candle:nth-child(4){height:82px;background:var(--gold)}.candle:nth-child(5){height:55px}.candle:nth-child(6){height:100px}.candle:nth-child(7){height:75px;background:var(--gold)}.candle:nth-child(8){height:112px}
+section{padding:55px 6%}
+.about{background:#0d120e}
+.intro{max-width:750px;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
+.card{padding:20px}
+.card .icon{font-size:28px;color:var(--green)}
+.card p{font-size:14px}
+h2{font-size:clamp(27px,4vw,39px);margin-bottom:12px}
+.tag{display:inline-block;border:1px solid #425744;border-radius:5px;padding:5px 9px;margin:4px;color:var(--green);font-size:13px}
+.analysis-note{font-size:12px;margin-top:18px}
+select,input{max-width:100%}
+#chatlog{height:210px;overflow-y:auto;background:#090e0b;border:1px solid #354536;border-radius:8px;padding:12px;margin:12px 0}
+.message{padding:8px;margin:5px 0;border-radius:7px;background:#18231b;overflow-wrap:anywhere}
+.chatform{display:flex;gap:8px}
+.chatform input{min-width:0;flex:1;background:#090e0b;color:white;border:1px solid #526253;border-radius:6px;padding:10px}
+button{cursor:pointer;border:0;border-radius:6px;padding:10px 14px;background:var(--green);color:#06110a;font-weight:bold}
+.contact{background:#0d120e}
+.contact a{color:var(--green);overflow-wrap:anywhere}
+.whatsapp{position:fixed;right:14px;bottom:16px;z-index:10;background:#25d366;color:#06210e;padding:12px 17px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 18px #000}
+footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid #354536;font-size:13px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:45px}header{align-items:flex-start}nav{gap:10px}.chatform{flex-wrap:wrap}.chatform input{flex-basis:65%}}
 </style>
 </head>
-
 <body>
 <header>
-  <div class="logo">♠ PANTHER FX</div>
+  <div class="brand">
+    <div class="logo" aria-label="Candlestick logo">📈</div>
+    <div>PANTHER <span style="color:white">FX</span></div>
+  </div>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#markets">Markets</a>
-    <a href="#contact">Contact</a>
+    <a href="#home" data-i="home">Home</a>
+    <a href="#about" data-i="about">About</a>
+    <a href="#services" data-i="services">Services</a>
+    <a href="#analysis" data-i="analysis">Analysis</a>
+    <a href="#assistant" data-i="assistant">AI Assistant</a>
+    <a href="#contact" data-i="contact">Contact</a>
+    <select id="language" aria-label="Choose language">
+      <option value="en">🇬🇧 English</option>
+      <option value="rw">🇷🇼 Ikinyarwanda</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="sw">🇹🇿 Kiswahili</option>
+      <option value="ar">🇸🇦 العربية</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="pt">🇵🇹 Português</option>
+      <option value="zh">🇨🇳 中文</option>
+      <option value="hi">🇮🇳 हिन्दी</option>
+      <option value="ja">🇯🇵 日本語</option>
+    </select>
   </nav>
 </header>
 
@@ -167,117 +89,131 @@ footer {
   <div>
     <div class="eyebrow">DISCIPLINE • STRATEGY • KNOWLEDGE</div>
     <h1>PANTHER THE 1ST<br><span>FX TRADING</span></h1>
-    <p>Understand the financial markets through forex education, technical analysis and disciplined risk management.</p>
+    <p data-i="hero">Learn Forex, understand market analysis and manage trading risk responsibly.</p>
     <div class="actions">
-      <a class="btn gold" href="#services">Explore Services</a>
-      <a class="btn outline" href="#contact">Contact Us</a>
+      <a class="btn gold" href="#services" data-i="explore">Explore Services</a>
+      <a class="btn outline" href="#contact" data-i="contact">Contact Us</a>
     </div>
   </div>
-
-  <div class="chart">
-    <h3>MARKET INSIGHT</h3>
-    <div class="candles">
-      <div class="candle c1"></div>
-      <div class="candle c2"></div>
-      <div class="candle c3"></div>
-      <div class="candle c4"></div>
-      <div class="candle c5"></div>
-      <div class="candle c6"></div>
-      <div class="candle c7"></div>
-      <div class="candle c8"></div>
+  <div class="panel">
+    <h3>🐆 MARKET INSIGHT</h3>
+    <div class="chart">
+      <div class="candle"></div><div class="candle"></div>
+      <div class="candle"></div><div class="candle"></div>
+      <div class="candle"></div><div class="candle"></div>
+      <div class="candle"></div><div class="candle"></div>
     </div>
-    <p class="chart-note">Illustrative chart for education only. Not live market data.</p>
+    <p class="analysis-note" data-i="sample">Illustration only — not live market prices.</p>
   </div>
 </section>
 
 <section class="about" id="about">
-  <h2>About <span>Panther FX</span></h2>
-  <p class="intro">Our goal is to make forex knowledge easier to understand. We focus on learning market structure, developing strategies and understanding trading risk.</p>
+  <h2 data-i="aboutTitle">About <span>Panther FX</span></h2>
+  <p class="intro" data-i="aboutText">Our mission is to make Forex education accessible and encourage responsible decisions.</p>
   <div class="grid">
-    <article class="card">
-      <div class="icon">♛</div>
-      <h3>Our Vision</h3>
-      <p>Encourage informed decisions and continuous learning about financial markets.</p>
-    </article>
-    <article class="card">
-      <div class="icon">◆</div>
-      <h3>Our Values</h3>
-      <p>Discipline, patience, honesty and responsible risk management.</p>
-    </article>
+    <article class="card"><div class="icon">🎯</div><h3 data-i="vision">Our Vision</h3><p data-i="visionText">Help learners develop market knowledge and disciplined habits.</p></article>
+    <article class="card"><div class="icon">🛡️</div><h3 data-i="values">Our Values</h3><p data-i="valuesText">Honesty, patience, continuous learning and risk awareness.</p></article>
   </div>
 </section>
 
 <section id="services">
-  <h2>Our <span>Services</span></h2>
-  <p class="intro">Explore our forex learning and market education services.</p>
+  <h2 data-i="servicesTitle">Our <span>Services</span></h2>
+  <p class="intro" data-i="servicesText">Learn the foundations of trading with structured educational resources.</p>
   <div class="grid">
-    <article class="card">
-      <div class="icon">⌁</div>
-      <h3>Forex Education</h3>
-      <p>Learn currency pairs, candlesticks, trading sessions and key market terminology.</p>
-    </article>
-    <article class="card">
-      <div class="icon">▤</div>
-      <h3>Technical Analysis</h3>
-      <p>Study trends, support and resistance, liquidity and market structure.</p>
-    </article>
-    <article class="card">
-      <div class="icon">◇</div>
-      <h3>Risk Management</h3>
-      <p>Understand stop-loss planning, position sizing and capital protection.</p>
-    </article>
-    <article class="card">
-      <div class="icon">◈</div>
-      <h3>Trading Psychology</h3>
-      <p>Build patience, discipline and a consistent learning routine.</p>
-    </article>
+    <article class="card"><div class="icon">📘</div><h3 data-i="education">Forex Education</h3><p data-i="educationText">Currency pairs, trading sessions, candlesticks and Forex terminology.</p></article>
+    <article class="card"><div class="icon">📊</div><h3 data-i="technical">Technical Analysis</h3><p data-i="technicalText">Trends, support, resistance, liquidity and market structure.</p></article>
+    <article class="card"><div class="icon">🛡️</div><h3 data-i="risk">Risk Management</h3><p data-i="riskText">Learn about stop loss, position sizing and protecting capital.</p></article>
+    <article class="card"><div class="icon">🧠</div><h3 data-i="psychology">Trading Psychology</h3><p data-i="psychologyText">Practice patience, discipline and thoughtful decision-making.</p></article>
   </div>
 </section>
 
-<section id="markets">
-  <h2>Markets We <span>Study</span></h2>
-  <p class="intro">Learn how different markets move and what can influence price.</p>
+<section id="analysis" class="about">
+  <h2 data-i="analysisTitle">Forex <span>Market Analysis</span></h2>
+  <p class="intro" data-i="analysisText">A framework for studying charts. These are educational steps, not current market signals.</p>
   <div class="grid">
-    <article class="card">
-      <h3>XAUUSD — Gold</h3>
-      <p>Learn to study gold price movements, key levels and market structure.</p>
-    </article>
-    <article class="card">
-      <h3>Forex Pairs</h3>
-      <p>Explore currency pairs and the possible impact of economic news.</p>
-    </article>
-    <article class="card">
-      <h3>Market Structure</h3>
-      <p>Study trends, breakouts, reversals and multiple timeframes.</p>
-    </article>
+    <article class="card"><span class="tag">4H</span><h3 data-i="direction">Direction & Trend</h3><p data-i="directionText">Study the broader trend, key levels and possible liquidity zones.</p></article>
+    <article class="card"><span class="tag">1H</span><h3 data-i="structure">Market Structure</h3><p data-i="structureText">Learn reversals, breakouts, order blocks and fair value gaps.</p></article>
+    <article class="card"><span class="tag">15M</span><h3 data-i="confirm">Confirmation</h3><p data-i="confirmText">Look for a clear setup and define what would invalidate the idea.</p></article>
+    <article class="card"><span class="tag">5M</span><h3 data-i="riskSetup">Entry & Risk</h3><p data-i="riskSetupText">Study potential entries, stop loss and risk-to-reward before acting.</p></article>
+  </div>
+  <h3 style="margin-top:25px;color:var(--gold)">Markets to study</h3>
+  <span class="tag">XAUUSD — Gold</span><span class="tag">EURUSD</span><span class="tag">GBPUSD</span><span class="tag">USDJPY</span>
+  <p class="analysis-note" data-i="disclaimer">No live data is connected. This is not a buy or sell signal.</p>
+</section>
+
+<section id="assistant">
+  <h2>🤖 <span data-i="aiTitle">AI Forex Learning Assistant</span></h2>
+  <p class="intro" data-i="aiIntro">Ask a basic Forex learning question. This demo uses prepared educational answers and is not connected to a live AI service.</p>
+  <div class="panel">
+    <div id="chatlog" aria-live="polite"><div class="message" data-i="welcome">Welcome! Ask about pips, candlesticks, trends or risk management.</div></div>
+    <form class="chatform" id="chatform">
+      <input id="question" maxlength="300" required placeholder="Ask a Forex question..." aria-label="Your question">
+      <button type="submit" data-i="send">Ask</button>
+    </form>
+    <p class="analysis-note" data-i="aiNote">Demo assistant only. Connect a secure AI API for open-ended answers. Never place secret API keys in this HTML file.</p>
   </div>
 </section>
 
 <section class="contact" id="contact">
-  <h2>Let's <span>Connect</span></h2>
-  <p class="intro">Contact us for enquiries and information about our educational services.</p>
+  <h2 data-i="contactTitle">Let's <span>Connect</span></h2>
+  <p class="intro" data-i="contactText">Contact Panther FX for information about educational services.</p>
   <div class="grid">
-    <article class="card">
-      <h3>Email</h3>
-      <p><a href="mailto:Ishimwesangoolivier@gmail.com">Ishimwesangoolivier@gmail.com</a></p>
-    </article>
-    <article class="card">
-      <h3>WhatsApp</h3>
-      <p><a href="https://wa.me/250786557229" target="_blank" rel="noopener noreferrer">Chat with Panther FX</a></p>
-    </article>
-    <article class="card">
-      <h3>Phone</h3>
-      <p><a href="tel:+250794783965">+250 794 783 965</a></p>
-    </article>
+    <article class="card"><h3>Email</h3><p><a href="mailto:Ishimwesangoolivier@gmail.com">Ishimwesangoolivier@gmail.com</a></p></article>
+    <article class="card"><h3>WhatsApp</h3><p><a href="https://wa.me/250786557229" target="_blank" rel="noopener noreferrer">Chat with Panther FX</a></p></article>
+    <article class="card"><h3>Phone</h3><p><a href="tel:+250794783965">+250 794 783 965</a></p></article>
   </div>
-  <p class="notice">Risk warning: Forex and leveraged trading involve significant risk and may lead to the loss of money. This website provides educational information, not personalized financial advice or guaranteed profits.</p>
+  <p class="analysis-note" data-i="riskWarning">Forex and leveraged trading carry significant risk. Educational content only; no guaranteed profits or personalized financial advice.</p>
 </section>
 </main>
 
-<a class="whatsapp" href="https://wa.me/250786557229" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+<a class="whatsapp" href="https://wa.me/250786557229" target="_blank" rel="noopener noreferrer">🟢 WhatsApp</a>
+<footer>© 2026 Panther The 1st FX Trading. <span data-i="rights">All rights reserved.</span></footer>
 
-<footer>
-  © 2026 Panther The 1st FX Trading. All rights reserved.
-</footer>
+<script>
+const translations={
+en:{home:"Home",about:"About",services:"Services",analysis:"Analysis",assistant:"AI Assistant",contact:"Contact",hero:"Learn Forex, understand market analysis and manage trading risk responsibly.",explore:"Explore Services",sample:"Illustration only — not live market prices.",aboutTitle:'About <span>Panther FX</span>',aboutText:"Our mission is to make Forex education accessible and encourage responsible decisions.",vision:"Our Vision",visionText:"Help learners develop market knowledge and disciplined habits.",values:"Our Values",valuesText:"Honesty, patience, continuous learning and risk awareness.",servicesTitle:'Our <span>Services</span>',servicesText:"Learn the foundations of trading with structured educational resources.",education:"Forex Education",educationText:"Currency pairs, trading sessions, candlesticks and Forex terminology.",technical:"Technical Analysis",technicalText:"Trends, support, resistance, liquidity and market structure.",risk:"Risk Management",riskText:"Learn about stop loss, position sizing and protecting capital.",psychology:"Trading Psychology",psychologyText:"Practice patience, discipline and thoughtful decision-making.",analysisTitle:'Forex <span>Market Analysis</span>',analysisText:"A framework for studying charts. These are educational steps, not current market signals.",direction:"Direction & Trend",directionText:"Study the broader trend, key levels and possible liquidity zones.",structure:"Market Structure",structureText:"Learn reversals, breakouts, order blocks and fair value gaps.",confirm:"Confirmation",confirmText:"Look for a clear setup and define what would invalidate the idea.",riskSetup:"Entry & Risk",riskSetupText:"Study potential entries, stop loss and risk-to-reward before acting.",disclaimer:"No live data is connected. This is not a buy or sell signal.",aiTitle:"AI Forex Learning Assistant",aiIntro:"Ask a basic Forex learning question. This demo uses prepared educational answers and is not connected to a live AI service.",welcome:"Welcome! Ask about pips, candlesticks, trends or risk management.",send:"Ask",aiNote:"Demo assistant only. Connect a secure AI API for open-ended answers. Never place secret API keys in this HTML file.",contactTitle:'Let’s <span>Connect</span>',contactText:"Contact Panther FX for information about educational services.",riskWarning:"Forex and leveraged trading carry significant risk. Educational content only; no guaranteed profits or personalized financial advice.",rights:"All rights reserved."},
+rw:{home:"Ahabanza",about:"Ibyerekeye twe",services:"Serivisi",analysis:"Isesengura",assistant:"Umufasha wa AI",contact:"Twandikire",hero:"Iga Forex, sobanukirwa n'isesengura ry'isoko kandi ucunge ibyago neza.",explore:"Reba serivisi",sample:"Igishushanyo cy'icyitegererezo — si ibiciro by'isoko biriho.",aboutTitle:'Ibyerekeye <span>Panther FX</span>',aboutText:"Intego yacu ni ugufasha abantu kwiga Forex no gufata ibyemezo bishyize mu gaciro.",vision:"Icyerekezo",visionText:"Gufasha abanyeshuri gusobanukirwa isoko no kugira discipline.",values:"Indangagaciro",valuesText:"Ubunyangamugayo, kwihangana, kwiga no kumenya ibyago.",servicesTitle:'<span>Serivisi</span> zacu',servicesText:"Iga amahame y'ubucuruzi ukoresheje amasomo ateguye neza.",education:"Kwiga Forex",educationText:"Currency pairs, amasaha y'isoko, candlesticks n'amagambo ya Forex.",technical:"Technical Analysis",technicalText:"Trend, support, resistance, liquidity n'imiterere y'isoko.",risk:"Gucunga ibyago",riskText:"Iga Stop Loss, ingano y'ubucuruzi no kurinda igishoro.",psychology:"Imitekerereze",psychologyText:"Itoze kwihangana, discipline no gufata ibyemezo witonze.",analysisTitle:'<span>Isesengura ry’isoko</span> rya Forex',analysisText:"Uburyo bwo kwiga chart. Ibi ni amasomo, si ibimenyetso by'isoko ririho ubu.",direction:"Icyerekezo na Trend",directionText:"Reba trend rusange, ibiciro by'ingenzi na liquidity.",structure:"Imiterere y'isoko",structureText:"Iga reversals, breakouts, order blocks na fair value gaps.",confirm:"Kwemeza",confirmText:"Shaka setup yumvikana kandi umenye icyayitesha agaciro.",riskSetup:"Entry n'ibyago",riskSetupText:"Iga entry, stop loss n'ikigereranyo cy'ibyago n'inyungu.",disclaimer:"Nta makuru y'isoko ririho ahujwe. Si inama yo kugura cyangwa kugurisha.",aiTitle:"Umufasha wa AI mu kwiga Forex",aiIntro:"Baza ikibazo cy'ibanze cya Forex. Iyi demo ikoresha ibisubizo byateguwe; ntirahujwe na AI nyayo.",welcome:"Murakaza neza! Baza kuri pips, candlesticks, trends cyangwa gucunga ibyago.",send:"Baza",aiNote:"Iyi ni demo. AI nyayo isaba API ihujwe neza. Ntushyire ibanga rya API muri iyi HTML.",contactTitle:'<span>Tuvugane</span>',contactText:"Twandikire kugira ngo umenye serivisi zacu zo kwigisha.",riskWarning:"Forex ifite ibyago byo gutakaza amafaranga. Ibi ni amasomo gusa; nta nyungu yizewe.",rights:"Uburenganzira bwose burabitswe."},
+fr:{home:"Accueil",about:"À propos",services:"Services",analysis:"Analyse",assistant:"Assistant IA",contact:"Contact",hero:"Apprenez le Forex, comprenez l'analyse du marché et gérez les risques.",explore:"Nos services",sample:"Illustration uniquement — pas de prix en direct.",aboutTitle:'À propos de <span>Panther FX</span>',aboutText:"Notre objectif est de rendre l'éducation Forex accessible et responsable.",vision:"Notre vision",visionText:"Aider les apprenants à comprendre les marchés.",values:"Nos valeurs",valuesText:"Honnêteté, patience et gestion des risques.",servicesTitle:'Nos <span>services</span>',servicesText:"Apprenez les bases du trading.",education:"Formation Forex",educationText:"Paires de devises, sessions et chandeliers.",technical:"Analyse technique",technicalText:"Tendances, supports, résistances et liquidité.",risk:"Gestion des risques",riskText:"Stop loss, taille de position et protection du capital.",psychology:"Psychologie du trading",psychologyText:"Patience et discipline.",analysisTitle:'<span>Analyse du marché</span>',analysisText:"Cadre éducatif d'analyse, pas de signal actuel.",direction:"Direction et tendance",directionText:"Étudiez la tendance et les niveaux clés.",structure:"Structure du marché",structureText:"Retournements, cassures et zones clés.",confirm:"Confirmation",confirmText:"Cherchez une configuration claire.",riskSetup:"Entrée et risque",riskSetupText:"Étudiez entrée, stop loss et risque/rendement.",disclaimer:"Aucune donnée en direct. Ceci n'est pas un signal d'achat ou de vente.",aiTitle:"Assistant Forex IA",aiIntro:"Posez une question de base. Cette démo n'est pas connectée à une IA réelle.",welcome:"Bienvenue ! Posez une question sur les pips, chandeliers ou risques.",send:"Envoyer",aiNote:"Démo uniquement. Une API sécurisée est nécessaire pour une IA réelle.",contactTitle:'<span>Contactons-nous</span>',contactText:"Contactez Panther FX pour en savoir plus.",riskWarning:"Le Forex comporte des risques importants. Contenu éducatif uniquement.",rights:"Tous droits réservés."},
+sw:{home:"Nyumbani",about:"Kuhusu",services:"Huduma",analysis:"Uchambuzi",assistant:"Msaidizi wa AI",contact:"Mawasiliano",hero:"Jifunze Forex, elewa uchambuzi wa soko na dhibiti hatari.",explore:"Tazama huduma",sample:"Mfano tu — si bei za soko za moja kwa moja.",aboutTitle:'Kuhusu <span>Panther FX</span>',aboutText:"Lengo letu ni kufanya elimu ya Forex ipatikane kwa urahisi.",vision:"Dira yetu",visionText:"Kusaidia wanafunzi kuelewa masoko.",values:"Maadili yetu",valuesText:"Uaminifu, subira na udhibiti wa hatari.",servicesTitle:'<span>Huduma</span> zetu',servicesText:"Jifunze misingi ya biashara.",education:"Elimu ya Forex",educationText:"Jozi za sarafu, vipindi na mishumaa ya chati.",technical:"Uchambuzi wa kiufundi",technicalText:"Mwelekeo, support, resistance na liquidity.",risk:"Udhibiti wa hatari",riskText:"Jifunze stop loss na kulinda mtaji.",psychology:"Saikolojia ya biashara",psychologyText:"Jenga subira na nidhamu.",analysisTitle:'<span>Uchambuzi wa soko</span>',analysisText:"Mwongozo wa kujifunza chati, si ishara za sasa.",direction:"Mwelekeo",directionText:"Chunguza mwelekeo na viwango muhimu.",structure:"Muundo wa soko",structureText:"Jifunze mabadiliko na breakouts.",confirm:"Uthibitisho",confirmText:"Tafuta mpangilio ulio wazi.",riskSetup:"Entry na hatari",riskSetupText:"Jifunze entry, stop loss na risk/reward.",disclaimer:"Hakuna data ya moja kwa moja. Si ishara ya kununua au kuuza.",aiTitle:"Msaidizi wa kujifunza Forex",aiIntro:"Uliza swali la msingi. Demo hii haijaunganishwa na AI halisi.",welcome:"Karibu! Uliza kuhusu pips, mishumaa au hatari.",send:"Uliza",aiNote:"Demo pekee; AI halisi inahitaji API salama.",contactTitle:'<span>Wasiliana nasi</span>',contactText:"Wasiliana nasi kuhusu huduma za elimu.",riskWarning:"Forex ina hatari kubwa. Haya ni maelezo ya elimu tu.",rights:"Haki zote zimehifadhiwa."},
+es:{home:"Inicio",about:"Nosotros",services:"Servicios",analysis:"Análisis",assistant:"Asistente IA",contact:"Contacto",hero:"Aprende Forex, comprende el mercado y gestiona los riesgos.",explore:"Ver servicios",sample:"Solo ilustración; no son precios en vivo.",aboutTitle:'Sobre <span>Panther FX</span>',aboutText:"Buscamos facilitar la educación Forex y las decisiones responsables.",vision:"Nuestra visión",visionText:"Ayudar a comprender los mercados.",values:"Nuestros valores",valuesText:"Honestidad, paciencia y gestión del riesgo.",servicesTitle:'Nuestros <span>servicios</span>',servicesText:"Aprende los fundamentos del trading.",education:"Educación Forex",educationText:"Pares de divisas, sesiones y velas.",technical:"Análisis técnico",technicalText:"Tendencias, soportes, resistencias y liquidez.",risk:"Gestión del riesgo",riskText:"Stop loss y protección del capital.",psychology:"Psicología del trading",psychologyText:"Practica la paciencia y la disciplina.",analysisTitle:'<span>Análisis de mercado</span>',analysisText:"Guía educativa, no señales actuales.",direction:"Dirección y tendencia",directionText:"Estudia la tendencia y niveles clave.",structure:"Estructura del mercado",structureText:"Aprende cambios y rupturas.",confirm:"Confirmación",confirmText:"Busca una configuración clara.",riskSetup:"Entrada y riesgo",riskSetupText:"Estudia entrada, stop loss y riesgo/recompensa.",disclaimer:"No hay datos en vivo. No es una señal de compra o venta.",aiTitle:"Asistente Forex IA",aiIntro:"Pregunta algo básico. Esta demo no está conectada a una IA real.",welcome:"¡Bienvenido! Pregunta sobre pips, velas o riesgos.",send:"Preguntar",aiNote:"Solo demo; una IA real requiere una API segura.",contactTitle:'<span>Conectemos</span>',contactText:"Contáctanos para más información.",riskWarning:"Forex implica riesgos importantes. Contenido educativo solamente.",rights:"Todos los derechos reservados."},
+pt:{home:"Início",about:"Sobre",services:"Serviços",analysis:"Análise",assistant:"Assistente IA",contact:"Contato",hero:"Aprenda Forex, entenda o mercado e gerencie os riscos.",explore:"Ver serviços",sample:"Apenas ilustração — não são preços ao vivo.",aboutTitle:'Sobre a <span>Panther FX</span>',aboutText:"Nosso objetivo é facilitar a educação Forex.",vision:"Nossa visão",visionText:"Ajudar alunos a entender os mercados.",values:"Nossos valores",valuesText:"Honestidade, paciência e gestão de risco.",servicesTitle:'Nossos <span>serviços</span>',servicesText:"Aprenda os fundamentos do trading.",education:"Educação Forex",educationText:"Pares de moedas, sessões e velas.",technical:"Análise técnica",technicalText:"Tendências, suporte, resistência e liquidez.",risk:"Gestão de risco",riskText:"Stop loss e proteção do capital.",psychology:"Psicologia de trading",psychologyText:"Pratique paciência e disciplina.",analysisTitle:'<span>Análise de mercado</span>',analysisText:"Guia educativo, não sinais atuais.",direction:"Direção e tendência",directionText:"Estude tendências e níveis importantes.",structure:"Estrutura do mercado",structureText:"Aprenda reversões e rompimentos.",confirm:"Confirmação",confirmText:"Procure uma configuração clara.",riskSetup:"Entrada e risco",riskSetupText:"Estude entrada, stop loss e risco/retorno.",disclaimer:"Sem dados ao vivo. Não é sinal de compra ou venda.",aiTitle:"Assistente Forex IA",aiIntro:"Faça uma pergunta básica. Esta demonstração não usa IA real.",welcome:"Bem-vindo! Pergunte sobre pips, velas ou riscos.",send:"Perguntar",aiNote:"Demonstração; IA real exige API segura.",contactTitle:'<span>Vamos conversar</span>',contactText:"Contacte-nos para saber mais.",riskWarning:"Forex envolve riscos significativos. Conteúdo educativo apenas.",rights:"Todos os direitos reservados."},
+ar:{home:"الرئيسية",about:"من نحن",services:"الخدمات",analysis:"التحليل",assistant:"مساعد الذكاء الاصطناعي",contact:"اتصل بنا",hero:"تعلم الفوركس وافهم السوق وأدر المخاطر بمسؤولية.",explore:"استكشف الخدمات",sample:"رسم توضيحي فقط، وليس أسعارًا مباشرة.",aboutTitle:'عن <span>Panther FX</span>',aboutText:"هدفنا تسهيل تعلم الفوركس وتشجيع القرارات المسؤولة.",vision:"رؤيتنا",visionText:"مساعدة المتعلمين على فهم الأسواق.",values:"قيمنا",valuesText:"النزاهة والصبر وإدارة المخاطر.",servicesTitle:'<span>خدماتنا</span>',servicesText:"تعلم أساسيات التداول.",education:"تعليم الفوركس",educationText:"أزواج العملات والجلسات والشموع.",technical:"التحليل الفني",technicalText:"الاتجاهات والدعم والمقاومة والسيولة.",risk:"إدارة المخاطر",riskText:"تعلم وقف الخسارة وحماية رأس المال.",psychology:"علم نفس التداول",psychologyText:"مارس الصبر والانضباط.",analysisTitle:'<span>تحليل السوق</span>',analysisText:"دليل تعليمي وليس إشارات سوق حالية.",direction:"الاتجاه",directionText:"ادرس الاتجاه والمستويات الرئيسية.",structure:"هيكل السوق",structureText:"تعلم الانعكاسات والاختراقات.",confirm:"التأكيد",confirmText:"ابحث عن إعداد واضح.",riskSetup:"الدخول والمخاطر",riskSetupText:"ادرس الدخول ووقف الخسارة والمخاطر.",disclaimer:"لا توجد بيانات مباشرة. هذه ليست إشارة شراء أو بيع.",aiTitle:"مساعد تعلم الفوركس",aiIntro:"اطرح سؤالًا أساسيًا. هذا النموذج غير متصل بذكاء اصطناعي حقيقي.",welcome:"مرحبًا! اسأل عن النقاط أو الشموع أو المخاطر.",send:"اسأل",aiNote:"عرض تجريبي؛ يتطلب الذكاء الاصطناعي الحقيقي واجهة API آمنة.",contactTitle:'<span>تواصل معنا</span>',contactText:"اتصل بنا لمعرفة المزيد.",riskWarning:"ينطوي الفوركس على مخاطر كبيرة. محتوى تعليمي فقط.",rights:"جميع الحقوق محفوظة."},
+zh:{home:"首页",about:"关于",services:"服务",analysis:"市场分析",assistant:"AI助手",contact:"联系",hero:"学习外汇，了解市场分析并负责任地管理风险。",explore:"查看服务",sample:"仅为示意图，并非实时市场价格。",aboutTitle:'关于 <span>Panther FX</span>',aboutText:"我们的目标是让外汇教育更容易获得。",vision:"愿景",visionText:"帮助学习者理解市场。",values:"价值观",valuesText:"诚信、耐心与风险意识。",servicesTitle:'我们的<span>服务</span>',servicesText:"学习交易基础知识。",education:"外汇教育",educationText:"货币对、交易时段和蜡烛图。",technical:"技术分析",technicalText:"趋势、支撑、阻力和流动性。",risk:"风险管理",riskText:"学习止损和资金保护。",psychology:"交易心理",psychologyText:"培养耐心和纪律。",analysisTitle:'外汇<span>市场分析</span>',analysisText:"这是学习框架，不是实时信号。",direction:"方向与趋势",directionText:"研究趋势和关键价位。",structure:"市场结构",structureText:"学习反转和突破。",confirm:"确认",confirmText:"寻找清晰的交易形态。",riskSetup:"入场与风险",riskSetupText:"研究入场、止损和风险回报。",disclaimer:"未连接实时数据，不构成买卖信号。",aiTitle:"外汇学习助手",aiIntro:"提出基础问题。本演示未连接真实AI。",welcome:"欢迎！可以询问点差、蜡烛图或风险。",send:"提问",aiNote:"演示版本；真实AI需要安全的API。",contactTitle:'<span>联系我们</span>',contactText:"欢迎咨询教育服务。",riskWarning:"外汇交易风险较高。内容仅供教育用途。",rights:"版权所有。"},
+hi:{home:"होम",about:"हमारे बारे में",services:"सेवाएँ",analysis:"विश्लेषण",assistant:"AI सहायक",contact:"संपर्क",hero:"Forex सीखें, बाजार विश्लेषण समझें और जोखिम जिम्मेदारी से संभालें।",explore:"सेवाएँ देखें",sample:"केवल उदाहरण; लाइव बाजार मूल्य नहीं।",aboutTitle:'<span>Panther FX</span> के बारे में',aboutText:"हम Forex शिक्षा को सरल और सुलभ बनाना चाहते हैं।",vision:"हमारा दृष्टिकोण",visionText:"सीखने वालों को बाजार समझने में मदद करना।",values:"हमारे मूल्य",valuesText:"ईमानदारी, धैर्य और जोखिम प्रबंधन।",servicesTitle:'हमारी <span>सेवाएँ</span>',servicesText:"ट्रेडिंग की बुनियादी बातें सीखें।",education:"Forex शिक्षा",educationText:"मुद्रा जोड़े, सत्र और कैंडलस्टिक्स।",technical:"तकनीकी विश्लेषण",technicalText:"ट्रेंड, सपोर्ट, रेजिस्टेंस और लिक्विडिटी।",risk:"जोखिम प्रबंधन",riskText:"स्टॉप लॉस और पूंजी सुरक्षा सीखें।",psychology:"ट्रेडिंग मनोविज्ञान",psychologyText:"धैर्य और अनुशासन विकसित करें।",analysisTitle:'Forex <span>बाजार विश्लेषण</span>',analysisText:"यह शैक्षिक मार्गदर्शन है, लाइव संकेत नहीं।",direction:"दिशा और ट्रेंड",directionText:"ट्रेंड और प्रमुख स्तरों का अध्ययन करें।",structure:"बाजार संरचना",structureText:"रिवर्सल और ब्रेकआउट सीखें।",confirm:"पुष्टि",confirmText:"स्पष्ट सेटअप खोजें।",riskSetup:"एंट्री और जोखिम",riskSetupText:"एंट्री, स्टॉप लॉस और जोखिम/लाभ का अध्ययन करें।",disclaimer:"लाइव डेटा उपलब्ध नहीं है। यह खरीद या बिक्री संकेत नहीं है।",aiTitle:"Forex सीखने का सहायक",aiIntro:"बुनियादी प्रश्न पूछें। यह डेमो वास्तविक AI से जुड़ा नहीं है।",welcome:"स्वागत है! पिप्स, कैंडलस्टिक्स या जोखिम के बारे में पूछें।",send:"पूछें",aiNote:"डेमो संस्करण; वास्तविक AI के लिए सुरक्षित API चाहिए।",contactTitle:'<span>संपर्क करें</span>',contactText:"शैक्षिक सेवाओं के लिए संपर्क करें।",riskWarning:"Forex में महत्वपूर्ण जोखिम है। केवल शैक्षिक जानकारी।",rights:"सर्वाधिकार सुरक्षित।"},
+ja:{home:"ホーム",about:"私たちについて",services:"サービス",analysis:"分析",assistant:"AIアシスタント",contact:"お問い合わせ",hero:"Forexを学び、市場分析を理解し、リスクを責任を持って管理しましょう。",explore:"サービスを見る",sample:"説明用の図であり、リアルタイム価格ではありません。",aboutTitle:'<span>Panther FX</span>について',aboutText:"Forex教育を分かりやすくし、責任ある判断を支援します。",vision:"ビジョン",visionText:"市場への理解を深める支援をします。",values:"価値観",valuesText:"誠実さ、忍耐、リスク管理。",servicesTitle:'私たちの<span>サービス</span>',servicesText:"取引の基礎を学びましょう。",education:"Forex教育",educationText:"通貨ペア、取引時間、ローソク足。",technical:"テクニカル分析",technicalText:"トレンド、サポート、レジスタンス、流動性。",risk:"リスク管理",riskText:"損切りと資金保護を学びます。",psychology:"トレード心理",psychologyText:"忍耐と規律を養います。",analysisTitle:'Forex <span>市場分析</span>',analysisText:"学習用の枠組みであり、現在の売買シグナルではありません。",direction:"方向とトレンド",directionText:"トレンドと重要な価格帯を確認します。",structure:"市場構造",structureText:"反転とブレイクアウトを学びます。",confirm:"確認",confirmText:"明確なセットアップを探します。",riskSetup:"エントリーとリスク",riskSetupText:"エントリー、損切り、リスクリワードを学びます。",disclaimer:"リアルタイムデータはありません。売買シグナルではありません。",aiTitle:"Forex学習アシスタント",aiIntro:"基本的な質問をどうぞ。このデモは実際のAIに接続されていません。",welcome:"ようこそ。pips、ローソク足、リスクについて質問できます。",send:"質問",aiNote:"デモ版です。実際のAIには安全なAPI接続が必要です。",contactTitle:'<span>お問い合わせ</span>',contactText:"教育サービスについてお問い合わせください。",riskWarning:"Forexには大きなリスクがあります。教育目的のみです。",rights:"無断転載を禁じます。"}
+};
+const langSelect=document.getElementById("language");
+langSelect.addEventListener("change",()=>{
+ const lang=langSelect.value,dict=translations[lang]||translations.en;
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i]").forEach(el=>{
+  const key=el.dataset.i;if(dict[key])el.innerHTML=dict[key];
+ });
+ document.getElementById("question").placeholder=lang==="rw"?"Andika ikibazo cya Forex...":"Ask a Forex question...";
+});
+const answers={
+pip:"A pip is a standard unit used to measure price movement in a currency pair. The value depends on the pair and position size.",
+candle:"Candlesticks show open, high, low and close prices for a chosen period. Patterns are not guarantees of future movement.",
+trend:"A trend describes the general direction of price. Use multiple timeframes and avoid assuming that past movement guarantees future results.",
+risk:"Risk management includes deciding in advance how much you could lose, using suitable position sizing and following a written plan.",
+stop:"A stop loss is an order intended to close a position at a chosen price. Execution can differ during gaps or fast markets.",
+default:"This demo has prepared answers for pips, candlesticks, trends and risk management. For broader questions, a secure AI service must be connected."
+};
+document.getElementById("chatform").addEventListener("submit",e=>{
+ e.preventDefault();
+ const input=document.getElementById("question"),q=input.value.trim();if(!q)return;
+ const log=document.getElementById("chatlog");
+ const user=document.createElement("div");user.className="message";user.textContent="You: "+q;log.appendChild(user);
+ const s=q.toLowerCase();let key="default";
+ if(s.includes("pip"))key="pip";
+ else if(s.includes("candle")||s.includes("candlestick"))key="candle";
+ else if(s.includes("trend")||s.includes("bullish")||s.includes("bearish"))key="trend";
+ else if(s.includes("risk")||s.includes("manage"))key="risk";
+ else if(s.includes("stop loss")||s.includes("stop-loss"))key="stop";
+ const reply=document.createElement("div");reply.className="message";reply.textContent="Panther FX Assistant: "+answers[key];log.appendChild(reply);
+ log.scrollTop=log.scrollHeight;input.value="";
+});
+</script>
 </body>
 </html>
