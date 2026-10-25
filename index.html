@@ -13,7 +13,38 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.7}
 header{padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:#090d0a;border-bottom:1px solid #354536}
 .brand{display:flex;align-items:center;gap:10px;color:var(--gold);font-weight:900}
-.logo{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+.
+.logo{
+  width:54px;
+  height:54px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  background:radial-gradient(circle,#183b27,#080b09 75%);
+  box-shadow:0 0 14px #48e69a40;
+  overflow:hidden;
+}
+.logo svg{
+  width:48px;
+  height:48px;
+  display:block;
+}
+.brand-name{
+  display:flex;
+  flex-direction:column;
+  line-height:1.2;
+  font-size:14px;
+  letter-spacing:1px;
+}
+.brand-name small{
+  color:var(--green);
+  font-size:9px;
+  letter-spacing:1px;
+  margin-top:4px;
+}
 nav{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
 nav a{color:white;text-decoration:none;font-size:13px}
 select,button,input{font:inherit}
@@ -57,11 +88,31 @@ footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid #3
 </style>
 </head>
 <body>
+
 <header>
   <div class="brand">
-    <div class="logo" aria-label="Candlestick logo">📈</div>
-    <div>PANTHER <span style="color:white">FX</span></div>
+    <div class="logo" aria-label="Panther FX logo">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" fill="#080b09" stroke="#48e69a" stroke-width="2"/>
+        <ellipse cx="50" cy="50" rx="25" ry="42" fill="none" stroke="#48e69a" opacity=".6"/>
+        <path d="M8 50H92 M18 30H82 M18 70H82" stroke="#48e69a" opacity=".4"/>
+        <g stroke="#48e69a" stroke-width="2">
+          <path d="M20 35V65 M16 42H24V55H16Z" fill="#48e69a"/>
+          <path d="M80 20V60 M76 30H84V45H76Z" fill="#48e69a"/>
+        </g>
+        <path d="M29 40L23 22L41 31L50 27L60 31L78 22L71 42L68 57L59 69L50 75L41 69L32 57Z"
+          fill="#d8b45a" stroke="#080b09" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M34 44L44 47L50 44L56 47L66 44L62 56L55 63L50 65L45 63L38 56Z" fill="#080b09"/>
+        <path d="M39 49L46 51 M54 51L61 49" stroke="#48e69a" stroke-width="3" stroke-linecap="round"/>
+        <path d="M47 57L50 60L53 57" fill="none" stroke="#d8b45a" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="brand-name">
+      <div>PANTHER <span style="color:white">FX</span></div>
+      <small>THE 1ST FX TRADING</small>
+    </div>
   </div>
+
   <nav>
     <a href="#home" data-i="home">Home</a>
     <a href="#about" data-i="about">About</a>
